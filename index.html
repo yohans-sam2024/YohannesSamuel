@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website</title>
+    <style>
+    *{
+        margin= 0;
+    }
+    
+        body {
+            font-family: Arial, sans-serif;
+            padding: 1px;
+            background-image: url("BACKGROUND IMAGE YOU CHOOSE WITH ITS FORMAT");
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            position: relative;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+            </style>
+    </head>
+    <style>
+        
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+            padding: 0.5rem;
+        }
+        nav a {
+            color: #fff;
+            padding: 0.5rem;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #555;
+        }
+        .container {
+            padding: 2rem;
+        }
+        .profile {
+            text-align: center;
+        }
+        .profile img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+        }
+        .profile h1 {
+            margin: 0.5rem 0;
+        }
+        .profile p {
+            color: #666;
+        }
+        .section {
+            margin: 2rem 0;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <marquee><h1>welcome to my personal offical website</h1></marquee>
+    </header>
+    <nav>
+        <a href="about.html">About</a>
+        <a href="gallery.html">Gallery</a>
+    </nav>
+    <head>
+    <style>
+        .button-container {
+    display: flex;
+    flex-direction: column; /* Stack buttons vertically */
+    gap: 10px; /* Space between buttons */
+    position: absolute; /* Positioning the buttons */
+    right: 10px; /* Moves buttons to the right */
+    buttom: 1500px; /* Adjust as needed to place them properly */
+}
+
+.tech-button {
+    background-color: #808080;
+    color: white;
+    padding: 50px 50px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 10px;
+    transition: background 0.3s ease;
+}
+
+.tech-button:hover {
+    background-color: #45a049;
+}
+    </style>
+</head>
+    <div class="button-container">
+    <button class="tech-button" onclick="openWebsite('https://www.w3schools.com/css/')">CSS</button>
+    <button class="tech-button" onclick="openWebsite('https://www.typescriptlang.org/')">TS</button>
+    <button class="tech-button" onclick="openWebsite('https://www.w3schools.com/html/')">HTML</button>
+    <button class="tech-button" onclick="openWebsite('https://www.w3schools.com/xml/')">XML</button>
+</div>
+
+<script>
+    function openWebsite(url) {
+        window.location.href = url;
+    }
+</script>
+    
+    <div class="container">
+        <section id="about" class="section profile">
+            <img src="IMAGE FOR PROFILE" alt="personal web">
+            <h1>YOUR NAME</h1>
+            <p>FREE SPACE</p>
+            
+        </section>
+        <section id="contacts" class="section">
+            <h2>CONTACTS</h2>
+            <ul>
+                <li><a href="your link of profile">name space</a></li>
+                <li><a href="your link of profile2">name space</a></li>
+                <li><a href="your link of profile3">name space</a></li>
+                <li><a href="your link of profile4">name space</a></li>
+            </ul>
+            
+        </section>
+        <section id="contact" class="section">
+            <h2>contact </h2>
+            <p>Email: <a href="mailto:youremail@gmail.com">youremail@gmail.com</a></p>
+            <p1>Cell number:<a herf="+25190000000"> +251 phone number</a></p1>
+            
+        </section>
+    </div>
+    <footer>
+        &copy; 2025 YOUR NAME HERE TOO. All rights reserved.
+    </footer>
+</body>
+</html>
